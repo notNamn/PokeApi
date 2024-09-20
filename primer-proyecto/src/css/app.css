@@ -1,0 +1,66 @@
+:root {
+  --primary-color: #ffcc00;
+  --secondary-color: #3b4cca;
+  --background-color: #f9f9f9;
+  --text-color: #333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: var(--secondary-color);
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.pokemon-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.loading, .error {
+  font-size: 18px;
+  color: var(--secondary-color);
+}
